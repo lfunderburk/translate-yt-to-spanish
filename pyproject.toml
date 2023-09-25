@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "translate-yt-to-spanish"
+version = "0.1.0"
+description = "Translating audio to a selected language, and setting up a qa system"
+authors = ["Carlos Bustillo, Laura Funderburk"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.28.0"
+farm-haystack = {extras = ["inference"], version = "^1.20.0"}
+python-dotenv = "^1.0.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.25.2"
+setuptools = "^68.2.2"
+pydub = "^0.25.1"
+simpleaudio = "^1.0.4"
+unidecode = "^1.3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
